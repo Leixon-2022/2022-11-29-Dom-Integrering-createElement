@@ -10,12 +10,20 @@ function addParagraphElement() {
 
     // const p som target - sätter innerHTML till nedan
     p.innerHTML = "New paragraph " + index
+    p.id = "p-" + index
 
     if (index % 2) {
       p.classList.add("my-paragraph-style-1")
     } else {
       p.classList.add("my-paragraph-style-2")
     }
+
+    // här lägger vi till en event-listener
+    // den lyssnar på en "händelse" (event)
+    // i detta fallet ett "click"
+    p.addEventListener("click", function () {
+      alert("Clicked on P - " + index)
+    })
 
     // const targetElement (vår div med id="container")
     // lägger vi till barn, alltså const p

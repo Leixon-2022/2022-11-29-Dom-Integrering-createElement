@@ -14,3 +14,13 @@ body {
 .my-paragraph-style-2 {
   background-color: #c13333;
 }
+
+.my-paragraph-style-1:hover {
+  background-color: #21b54b;
+  cursor: pointer;
+}
+
+.my-paragraph-style-2:hover {
+  background-color: #216bb5;
+  cursor: pointer;
+}
